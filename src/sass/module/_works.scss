@@ -1,0 +1,28 @@
+.works {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.works__img {
+	width: calc(25% - #{rem(11)} * 3 / 4);
+
+	&:not(:nth-child(4n + 1)) {
+		margin-left: rem(11);
+	}
+
+	&:nth-child(n + 5) {
+		margin-top: rem(12);
+	}
+
+	@include mq("md") {
+		width: calc(25% - #{rem(40)} * 3 / 4);
+		
+		&:not(:nth-child(4n + 1)) {
+			margin-left: rem(40);
+		}
+		
+		&:nth-child(n + 5) {
+			margin-top: rem(50);
+		}
+	}
+}

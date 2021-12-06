@@ -1,0 +1,32 @@
+.trial {
+	padding: rem(40) 0;
+	background: $black;
+	
+	@include mq("md") {
+		padding: rem(61.5) 0;
+	}
+}
+
+.trial__title {
+	color: $white;
+	text-align: center;
+	font-weight: $bold;
+	font-size: rem(18);
+	line-height: rem(28.8);
+	letter-spacing: 0.02em;
+	
+	@include mq("md") {
+		font-size:rem(36);
+		line-height: rem(52);
+	}
+}
+
+.trial__btn {
+	text-align: center;
+	margin-top: rem(25);
+	
+	
+	@include mq("md") {
+		margin-top: rem(29.2);
+	}
+}

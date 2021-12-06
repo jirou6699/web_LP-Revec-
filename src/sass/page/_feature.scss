@@ -1,0 +1,128 @@
+.feature {
+	padding: rem(53) 0 rem(61);
+	background: #f9f9f9;
+
+	@include mq("md") {
+		padding: rem(90) 0 rem(97.8);
+	}
+}
+
+.feature__inner {
+	max-width: rem(600);
+	width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq("md") {
+    max-width: $inner + strip-unit($padding-pc-left)* 2;
+		width: 100%;
+    padding-right: $padding-pc-left;
+    padding-left: $padding-pc-left;
+  }
+}
+
+.feature__title {
+	margin-top: rem(10);
+	& span {
+		font-size: rem(38);
+	}
+
+	@include mq("md") {
+		margin-top: rem(15.2);
+		& span {
+			font-size: rem(60);
+		}
+	}
+}
+
+.feature__item1 {
+	@include mq("md") {
+		margin-top: rem(254.6);
+		position: relative;
+	}
+}
+
+.feature__img1 {
+	@include mq("md") {
+		position: absolute;
+		top: rem(-181.8);
+		right: rem(37.8);
+	}
+}
+
+.feature__item2 {
+	margin-top: rem(60);
+
+	@include mq("md") {
+		margin-top: rem(152);
+		position: relative;
+	}
+}
+
+.feature__img2 {
+	@include mq("md") {
+		position: absolute;
+		top: rem(-11);
+		left: rem(2);
+	}
+}
+
+.feature__item3 {
+	margin-top: rem(61);
+	@include mq("md") {
+		margin-top: rem(261.2);
+		position: relative;
+	}
+}
+
+.feature__img3 {
+	@include mq("md") {
+		position: absolute;
+		top: rem(-196.4);
+		right: rem(15.6);
+	}
+}
+
+.feature__top {
+	@include mq("md") {
+		padding: rem(65) rem(124) rem(65) rem(40) !important;
+	}
+}
+
+.feature__middle {
+	padding: rem(36) rem(5.5) rem(40) rem(18) !important;
+	margin-top: rem(-176) !important;
+	
+	@include mq("md") {
+		padding: rem(64.8) rem(12) rem(67.2) rem(27.2) !important;
+		margin-top: 0 !important;
+		margin-left: auto;
+	}
+}
+
+.feature__wrap {
+	@include mq("md") {
+		@include mq("md") {
+			margin-left: rem(19.6);
+		}
+	}
+}
+
+.feature__bottom {
+	padding: rem(36) rem(5.5) rem(40) rem(18) !important;
+	@include mq("md") {
+		padding: rem(65) rem(44) rem(65) rem(40) !important;
+	}
+}
+
+.feature__sub-title {
+	font-size: rem(24);
+	line-height: rem(35.85);
+	letter-spacing: 0.007em;
+
+	@include mq("md") {
+		font-size: rem(36);
+		line-height: rem(52.13);
+		margin-top: 0;
+	}
+}

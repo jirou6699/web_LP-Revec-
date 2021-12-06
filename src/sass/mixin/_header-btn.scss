@@ -1,0 +1,21 @@
+$back-ground-color:#64629D;
+$color: #fff;
+$border: 2px solid #64629D;
+
+.header-btn {
+	position: relative;
+	top: 0;
+	display: inline-block;
+	width: rem(180);
+	font-weight: $bold;
+	text-align: center;
+	background: $back-ground-color;
+	color: $color;
+	padding: rem(6);
+	border-radius: rem(25);
+	border: $border;
+
+	&:hover {
+		
+	}
+}

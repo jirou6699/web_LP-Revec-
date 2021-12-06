@@ -1,0 +1,54 @@
+.about {
+	padding: rem(72) 0 rem(60);
+	
+	@include mq("md") {
+		padding: rem(90) 0 rem(101.5);
+	}
+}
+
+.about__title {
+	margin-top: rem(6.5);
+
+	@include mq("md") {
+		margin-top: rem(14.5);
+	}
+}
+
+.about__lead {
+	margin-top: rem(27.5);
+	font-size: rem(16);
+	line-height: rem(25.6);
+	text-align: center;
+	
+	& span {
+		font-weight: $bold;
+	}
+	
+	@include mq("md") {
+		font-size: rem(16);
+		margin-top: rem(35);
+		letter-spacing: 0.12em;
+	}
+}
+
+.about__text {
+	margin-top: rem(27.4);
+	font-size: rem(16);
+	line-height: rem(25.6);
+	text-align: center;
+	
+	@include mq("md") {
+		font-size: rem(18);
+		margin-top: rem(33.5);
+		line-height: rem(32.4);
+	}
+}
+
+.about__btn {
+	text-align: center;
+	margin-top: rem(24);
+	
+	@include mq("md") {
+		margin-top: rem(43.2);
+	}
+}

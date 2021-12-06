@@ -1,0 +1,91 @@
+.card {
+	position: relative;
+	max-width: rem(600);
+	width: 100%;
+
+	@include mq("md") {
+		max-width: rem(280);
+		width: 100%;
+
+		&:nth-child(3) > .card__no {
+			top: rem(-15);
+			left: rem(-15.2);
+		}
+	}
+}
+
+.card__no {
+	position: absolute;
+	z-index: 10;
+	top: rem(-27);
+	left: rem(0);
+	font-family: $font-family-bg;
+	font-weight: $bold;
+	font-size: rem(48);
+	line-height: rem(47.74);
+	color: $blue;
+
+	@include mq("md") {
+		top: rem(-15);
+		left: rem(-12.7);
+	}
+}
+
+.card__img {
+	position: relative;
+	width: 100%;
+	padding-top: 57.014%;
+	background: #edecfc;
+	border-radius: rem(30);
+	margin: auto;
+
+	@include mq("md") {
+		width: 100%;
+		padding-top: 70%;
+	}
+
+	& img {
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 60%;
+		height: 78%;
+
+		@include mq("md") {
+			top: 50%;
+			left: 52%;
+			width: 74%;
+			height: 76%;
+		}
+	}
+}
+
+.card__body {
+	padding: rem(11) 0;
+}
+
+.card__title {
+	font-weight: $bold;
+	font-size: rem(20);
+	text-align: center;
+
+	@include mq("md") {
+		font-size: rem(24);
+		margin-top: rem(0.2);
+		margin-left: rem(8.4);
+	}
+}
+
+.card__text {
+	line-height: rem(30);
+	color: #2D2D32;
+
+	@include mq("md") {
+		font-size: rem(16);
+		line-height: rem(28.9);
+		margin-top: rem(7);
+		margin-left: rem(3);
+	}
+}

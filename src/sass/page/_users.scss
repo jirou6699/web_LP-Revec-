@@ -1,0 +1,33 @@
+.users {
+	padding: rem(54) 0 rem(60);
+	
+	@include mq("md") {
+		padding: rem(88.8) 0 rem(96.8);
+	}
+}
+
+.users__title {
+	@include mq("md") {
+		margin-top: rem(13.2);
+	}
+}
+
+.users__items {
+	margin-top: rem(18);
+
+	@include mq("md") {
+		margin-top: rem(42.7);
+	}
+}
+
+.users__item {
+	min-width: rem(335);
+	width: 100%;
+	margin: auto;
+	
+	@include mq("md") {
+		max-width: rem(972);
+		width: 100%;
+		margin: auto;
+	}
+}

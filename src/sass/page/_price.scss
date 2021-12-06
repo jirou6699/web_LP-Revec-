@@ -1,0 +1,210 @@
+.price {
+	padding: rem(53.5) 0 rem(67);
+	white-space: nowrap; /* 折り返されないように */
+	overflow-x: auto; /* 横スクロール */
+	-webkit-overflow-scrolling: touch; /* スマホでスムーズにスクロールできるように */
+
+	@include mq("md") {
+		padding: rem(91.8) 0 rem(115);
+	}
+}
+
+.price__title {
+	@include mq("md") {
+		margin-top: rem(13);
+	}
+}
+
+.price__table {
+	margin-top: rem(66);
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+
+	@include mq("md") {
+		max-width: rem(1021.59);
+		width: 100%;
+		margin: rem(87) auto 0;
+	}
+}
+
+.price__head {
+	width: 100%;
+
+	& td {
+		width: rem(151);
+
+		@include mq("md") {
+			width: rem(241.12);
+		}
+	}
+
+	& th {
+		width: rem(180);
+		padding: rem(28) rem(7);
+		background: $black;
+
+		@include mq("md") {
+			width: rem(260.1);
+			padding: rem(7) 0 rem(41.6);
+		}
+	}
+}
+
+.price__lead {
+	font-weight: $bold;
+	font-size: rem(20);
+	text-align: center;
+	color: $white;
+
+	@include mq("md") {
+		font-size: rem(24);
+		margin-top: rem(37);
+	}
+}
+
+.price__monthly {
+	margin-top: rem(10);
+	text-align: center;
+	color: $white;
+	font-size: rem(12);
+	font-weight: $bold;
+	letter-spacing: 0.09em;
+
+	@include mq("md") {
+		margin-top: rem(14.3);
+		font-size: rem(18);
+	}
+
+	& span {
+		font-size: rem(30);
+		@include mq("md") {
+			font-size: rem(36);
+			letter-spacing: -0.01em;
+		}
+	}
+}
+
+.price__btn {
+	margin-top: rem(19);
+
+	@include mq("md") {
+		margin-top: rem(28.6);
+	}
+}
+
+.price__body {
+	tr {
+		height: rem(42);
+		vertical-align: middle;
+
+		@include mq("md") {
+			height: rem(60);
+		}
+	}
+
+	& tr:nth-child(odd) {
+		background: #EDECFC;
+	}
+
+	td:not(:first-child) {
+		font-size: rem(15);
+		font-weight: $normal;
+		text-align: center;
+		
+		@include mq("md") {
+			font-size: rem(18);
+		}
+	}
+	
+	td:first-child {
+		padding-left: rem(19);
+		text-align: left;
+		letter-spacing: 0.004em;
+		
+		@include mq("md") {
+			font-size: rem(22);
+			padding-left: rem(32);
+		}
+	}
+}
+
+.price__foot {
+	& td {
+		text-align: center;
+		padding-top: rem(10);
+
+		@include mq("md") {
+			padding-top: rem(16.4);
+		}
+	}
+}
+
+// js-accent
+.js-accent {
+	background: #64629D !important;
+	position: relative;
+	width: rem(232) !important;
+
+	@include mq("md") {
+		width: rem(260.1) !important;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: rem(-33);
+		left: 0;
+		width: 100%;
+		height: rem(33);
+		background: #64629D !important;
+
+		@include mq("md") {
+			top: rem(-17);
+			left: 0;
+			width: 100%;
+			height: rem(17);
+		}
+	}
+
+	& .price__lead {
+		@include mq("md") {
+			font-size: rem(28);
+		}
+	}
+
+	& .price__monthly {
+		@include mq("md") {
+			font-size: rem(24);
+			margin-top: rem(6.6);
+
+			& span {
+				font-size: rem(42);
+				margin-top: rem(9.8);
+			}
+		}
+	}
+
+	& .price__btn {
+		@include mq("md") {
+			margin-top: rem(23.8);
+		}
+	}
+
+	& .price-btn-white {
+		background: #64629D;
+		border: 1px solid white;
+		color: $white;
+	}
+}
+
+.price__body .js-show {
+	font-size: rem(24) !important;
+	font-weight: $bold;
+}
+
+.price__foot .js-blue {
+	background: #64629D;
+	border: 1px solid white;
+	color: $white;
+}

@@ -1,0 +1,13 @@
+.heading {
+	font-family: $font-family-bg;
+	font-weight: $bold;
+	font-size: rem(22);
+	text-align: center;
+	color:#9F9EC1;
+	letter-spacing: 0.04em;
+	
+	@include mq("md") {
+		font-size: rem(36);
+		letter-spacing: 0.05em;
+	}
+}

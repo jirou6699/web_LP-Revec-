@@ -1,0 +1,14 @@
+/* FontFamily */
+$font-family-en: 'Lato', sans-serif;
+$font-family-base: 'Noto Sans JP', sans-serif;
+$font-family-bg: 'Renner*', sans-serif;
+
+
+body {
+  font-family: $font-family-base;
+}
+
+/* font-weight */
+$regular: 300;
+$normal: 400;
+$bold: 700;

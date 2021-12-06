@@ -1,0 +1,31 @@
+$back-ground-color:#64629D;
+$color: #fff;
+$border: 2px solid #64629D;
+
+.main-visual-btn {
+	position: relative;
+	top: 0;
+	display: inline-block;
+	width: rem(300);
+	font-size: rem(18);
+	font-weight: $bold;
+	text-align: center;
+	background: $back-ground-color;
+	color: $color;
+	padding: rem(14);
+	border-radius: rem(29);
+	border: $border;
+	box-shadow: 0px rem(4) rem(6) rgba(0, 0, 0, 0.24);
+	transition: all .3s;
+	
+	@include mq("md") {
+		width: rem(250);
+		padding: rem(10);
+
+	}
+
+	&:hover {
+		top: -2px;
+		box-shadow: 0px rem(7) rem(6) rgba(0, 0, 0, 0.24);
+	}
+}

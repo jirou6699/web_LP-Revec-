@@ -1,0 +1,17 @@
+.title {
+	font-weight: $bold;
+	font-size: rem(30);
+	letter-spacing: 0.06em;
+	text-align: center;
+	color: #64629D;
+	line-height: rem(42);
+
+	& span {
+		font-size: rem(38);
+	}
+
+		
+	@include mq("md") {
+		font-size: rem(48);
+	}
+}
