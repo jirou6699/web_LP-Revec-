@@ -1,7 +1,6 @@
 "use strict";
 
 jQuery(function ($) {
-  // この中であればWordpressでも「$」が使用可能になる
   // プライステーブル表
   var tab = $(".price__head tr th");
   $(tab).on('click', function () {

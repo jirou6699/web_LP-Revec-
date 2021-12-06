@@ -43,6 +43,7 @@
 		width: rem(180);
 		padding: rem(28) rem(7);
 		background: $black;
+		cursor: pointer;
 
 		@include mq("md") {
 			width: rem(260.1);
